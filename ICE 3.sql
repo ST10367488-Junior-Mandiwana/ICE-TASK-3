@@ -1,0 +1,14 @@
+CREATE DATABASE ICE_Task_DB;
+GO
+
+USE ICE_Task_DB;
+GO
+
+--Create a table
+CREATE TABLE Products (
+    Id INT PRIMARY KEY IDENTITY,
+    Name VARCHAR(100) NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    Description VARCHAR(MAX)
+);
+GO
